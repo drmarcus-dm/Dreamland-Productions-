@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dreamland Productions - Your Source for Malawian News and Stories. Covering business, politics, sports, health, and more.">
+    <meta name="keywords" content="Malawi news, Dreamland Productions, Lilongwe, floods, taxes, education">
+    <meta name="author" content="Dynamité Graphix">
+    <title>Dreamland Productions - Malawian News Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header-top {
+            background-color: #000; /* Black from Malawi flag */
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        .header-top a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .header-top a:hover {
+            color: #ff0000; /* Red from flag */
+        }
+        .logo {
+            color: #ff0000;
+            font-weight: 800;
+            font-size: 2em;
+        }
+        .navbar {
+            background-color: #008000 !important; /* Green from flag */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: #ffd700 !important; /* Gold for rising sun */
+        }
+        .ad-banner {
+            background-color: #ffd700;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .breaking-news {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .breaking-news .carousel-item {
+            text-align: center;
+        }
+        .featured-article {
+            position: relative;
+        }
+        .featured-article img {
+            width: 100%;
+            height: auto;
+        }
+        .featured-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+        }
+        .side-article {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-top">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col">Monday, January 05, 2026</div>
+                <div class="col text-center"><a href="#">Sign In / Join</a></div>
+                <div class="col text-end">Lilongwe, 25°C <i class="fab fa-facebook-f ms-2"></i> <i class="fab fa-twitter ms-2"></i> <i class="fab fa-instagram ms-2"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">Dreamland Productions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mega Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">World</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Science</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ad-banner">
+        <div class="container">
+            Discover Malawi's Rich Culture – Explore Lake Malawi Tours! <a href="#" class="btn btn-dark">Book Now</a>
+        </div>
+    </div>
+
+    <section class="breaking-news">
+        <div class="container">
+            <h5>Breaking News</h5>
+            <div id="breakingCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        Heavy Rains Leave Over 30 Households Destitute in Mzuzu
+                    </div>
+                    <div class="carousel-item">
+                        Taxes Bite: New Changes Effective January 1, 2026
+                    </div>
+                    <div class="carousel-item">
+                        Schools Reopen Amidst Flood Damage
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#breakingCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#breakingCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="featured-article">
+                    <img src="https://placehold.co/800x400?text=Floods+in+Mzuzu" alt="Floods in Mzuzu">
+                    <div class="featured-text">
+                        <span class="badge bg-danger">National</span> <small>January 05, 2026</small>
+                        <h2>Floods Devastate Mzuzu: Over 30 Households Left Destitute</h2>
+                        <p>Heavy downpours trigger flash floods, leaving families without homes. Aid efforts underway.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="side-article">
+                    <img src="https://placehold.co/400x200?text=Taxes+Bite" alt="Taxes Bite" class="img-fluid">
+                    <span class="badge bg-warning">Business</span> <small>January 03, 2026</small>
+                    <h4>Taxes Bite: New Changes Effective January 1</h4>
+                    <p>President Mutharika assents to Taxation Amendment Bill, impacting businesses and citizens.</p>
+                </div>
+                <div class="side-article">
+                    <img src="https://placehold.co/400x200?text=Schools+Reopen" alt="Schools Reopen" class="img-fluid">
+                    <span class="badge bg-success">Education</span> <small>January 05, 2026</small>
+                    <h4>All Government Schools Open Today Despite Rain Damage</h4>
+                    <p>Nkhotakota remains closed; funding released for repairs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placehold.co/400x250?text=Flood+Damage+Road" alt="Flood Damage Road" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge bg-danger">Disaster</span> <small>January 04, 2026</small>
+                        <h5 class="card-title">Flood Damage to Key Road Hampers Aid Delivery</h5>
+                        <p>Persistent rains in 2025/26 season cause widespread flooding in central Malawi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placehold.co/400x250?text=Education+Ministry" alt="Education Ministry" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge bg-info">Education</span> <small>January 02, 2026</small>
+                        <h5 class="card-title">Government Introduces New Education Initiatives</h5>
+                        <p>Ministry of Education releases funding ahead of second term opening.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placehold.co/400x250?text=Hot+Current" alt="Hot Current" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge bg-primary">Politics</span> <small>January 04, 2026</small>
+                        <h5 class="card-title">Hot Current: Vice President's Trip in the Spotlight</h5>
+                        <p>Discussions on recent political developments in Malawi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Designed and Developed by <a href="https://drmarcus-dm.github.io/Dumisani-Tukula-s-Portfolio-/">Dynamité Graphix</a> &copy; 2026 | Dreamland Productions, Malawi</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
