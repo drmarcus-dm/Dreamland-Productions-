@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dreamland Productions - Your Source for World News and Stories. Covering business, politics, sports, health, and more.">
-    <meta name="keywords" content="World news, Dreamland Productions, Venezuela, Greenland, Gaza, Trump, Maduro">
+    <meta name="keywords" content="World news, Dreamland Productions, Politics, Business, Sports, Technology, Entertainment">
     <meta name="author" content="Dynamité Graphix">
     <title>Dreamland Productions - World News Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
@@ -13,48 +13,48 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #F5E8C7;
+            color: #7D5A50;
             line-height: 1.6;
         }
         .header-top {
-            background-color: #000; /* Black from Malawi flag */
-            color: #fff;
+            background-color: #7D5A50;
+            color: #F5E8C7;
             padding: 10px 0;
             font-size: 0.9em;
         }
         .header-top a {
-            color: #fff;
+            color: #F5E8C7;
             text-decoration: none;
         }
         .header-top a:hover {
-            color: #ff0000; /* Red from flag */
+            color: #E5B299;
         }
         .logo {
-            color: #ff0000;
+            color: #9E7777;
             font-weight: 800;
             font-size: 2em;
         }
         .navbar {
-            background-color: #008000 !important; /* Green from flag */
+            background-color: #E5B299 !important;
         }
         .navbar-brand, .nav-link {
-            color: #fff !important;
+            color: #7D5A50 !important;
             font-weight: 600;
         }
         .nav-link:hover {
-            color: #ffd700 !important; /* Gold for rising sun */
+            color: #F5E8C7 !important;
         }
         .ad-banner {
-            background-color: #ffd700;
-            color: #000;
+            background-color: #9E7777;
+            color: #F5E8C7;
             text-align: center;
             padding: 10px;
             margin-bottom: 20px;
         }
         .breaking-news {
-            background-color: #ff0000;
-            color: #fff;
+            background-color: #9E7777;
+            color: #F5E8C7;
             padding: 10px;
             margin-bottom: 20px;
         }
@@ -63,44 +63,64 @@
         }
         .featured-article {
             position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .featured-article:hover {
+            transform: scale(1.02);
         }
         .featured-article img {
             width: 100%;
             height: auto;
+            object-fit: cover;
         }
         .featured-text {
             position: absolute;
             bottom: 0;
             left: 0;
-            background: rgba(0,0,0,0.7);
-            color: #fff;
+            background: rgba(125, 90, 80, 0.7);
+            color: #F5E8C7;
             padding: 20px;
             width: 100%;
         }
         .side-article {
             margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .side-article:hover {
+            transform: translateY(-5px);
         }
         footer {
-            background-color: #000;
-            color: #fff;
+            background-color: #7D5A50;
+            color: #F5E8C7;
             padding: 30px 0;
             text-align: center;
         }
         footer a {
-            color: #ff0000;
+            color: #E5B299;
             text-decoration: none;
         }
         footer a:hover {
-            color: #ffd700;
+            color: #F5E8C7;
         }
         .video-embed {
             margin-top: 20px;
             text-align: center;
         }
-        /* Additional clean and professional styles */
         .card {
             border: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
         }
         .card-img-top {
             height: 250px;
@@ -108,9 +128,26 @@
         }
         .badge {
             font-size: 0.8em;
+            background-color: #E5B299 !important;
+            color: #7D5A50 !important;
         }
         small {
-            color: #777;
+            color: #9E7777;
+        }
+        h2, h4, h5 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .modal-content {
+            background-color: #F5E8C7;
+            color: #7D5A50;
+        }
+        .modal-header {
+            border-bottom: 1px solid #E5B299;
+        }
+        .modal-footer {
+            border-top: 1px solid #E5B299;
         }
     </style>
 </head>
@@ -119,8 +156,8 @@
     <header class="header-top">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col">Monday, January 05, 2026</div>
-                <div class="col text-center">Website still under construction 🚧</div>
+                <div class="col">Tuesday, January 06, 2026</div>
+                <div class="col text-center">Stay Updated with Dreamland Productions</div>
                 <div class="col text-end">Lilongwe, 25°C <i class="fab fa-facebook-f ms-2"></i> <i class="fab fa-twitter ms-2"></i> <i class="fab fa-instagram ms-2"></i></div>
             </div>
         </div>
@@ -163,13 +200,13 @@
             <div id="breakingCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        President Nicolas Maduro Pleads Not Guilty to Narco-Terrorism Charges
+                        MADURO DECLARES HIMSELF 'PRISONER OF WAR' IN DRAMATIC COURT APPEARANCE
                     </div>
                     <div class="carousel-item">
-                        'We Need Greenland': Trump Repeats Threat to Annex Danish Territory
+                        TRUMP'S GREENLAND PUSH SPARKS EUROPEAN CRISIS
                     </div>
                     <div class="carousel-item">
-                        Israel Launches Deadly Strikes in Gaza Amid Ceasefire Violations
+                        UK BRACES FOR HEAVY SNOW AS SCHOOLS SHUTTER
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#breakingCarousel" data-bs-slide="prev">
@@ -188,72 +225,585 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="featured-article">
-                    <img src="https://www.reuters.com/resizer/v2/RTT4DA3I2VKUHLAK6UHJDQVHJQ.jpg?auth=31cb23b6314faac3ec93b2b15255759109a03242ac8bf5f6b2ca1ea3196e8027&width=1920&quality=80" alt="Nicolas Maduro in Court">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?courtroom" alt="Maduro in Court">
                     <div class="featured-text">
-                        <span class="badge bg-danger">International</span> <small>January 05, 2026</small>
-                        <h2>President Nicolas Maduro Pleads Not Guilty to Charges of Narco-Terrorism</h2>
-                        <p>Toppled Venezuelan President Nicolas Maduro pleaded not guilty on Monday to charges of narco-terrorism after President Donald Trump's stunning capture of him rattled world leaders and left officials in Caracas scrambling to respond.</p>
+                        <span class="badge">Politics</span> <small>January 06, 2026</small>
+                        <h2>MADURO DECLARES HIMSELF 'PRISONER OF WAR' IN DRAMATIC COURT APPEARANCE</h2>
+                        <p>Nicolás Maduro appears in court, declaring himself a 'prisoner of war'.</p>
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#news1">Read Full Story</button>
                     </div>
-                </div>
-                <div class="video-embed">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zfDp6pQLnRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="side-article">
-                    <img src="https://images.unsplash.com/photo-1545576597-2354f983a3e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Greenland Landscape" class="img-fluid">
-                    <span class="badge bg-warning">Politics</span> <small>January 05, 2026</small>
-                    <h4>'We Need Greenland': Trump Repeats Threat to Annex Danish Territory</h4>
-                    <p>Donald Trump has reiterated his proposal to annex Greenland, citing national security and mineral wealth, prompting rebukes from Danish and Greenlandic leaders.</p>
-                    <div class="video-embed">
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/2psBEoWVjLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <img src="https://source.unsplash.com/featured/1920x1080/?greenland" alt="Greenland Landscape" class="img-fluid">
+                    <span class="badge">Politics</span> <small>January 06, 2026</small>
+                    <h4>TRUMP'S GREENLAND PUSH SPARKS EUROPEAN CRISIS</h4>
+                    <p>Trump's claim on Greenland causes European uncertainty.</p>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#news2">Read Full Story</button>
                 </div>
                 <div class="side-article">
-                    <img src="https://www.aljazeera.com/wp-content/uploads/2023/10/INTERACTIVE-Gaza-Jabalia-before-after-satellite-1697116874.png?resize=1920%2C1440" alt="Gaza Destruction" class="img-fluid">
-                    <span class="badge bg-success">Conflict</span> <small>January 05, 2026</small>
-                    <h4>Israel Launches Deadly Strikes in Gaza in New Ceasefire Violations</h4>
-                    <p>An Israeli airstrike in Gaza resulted in the deaths of two individuals, including a girl, according to hospital staff, amid ongoing ceasefire violations.</p>
-                    <div class="video-embed">
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/jE48lBSjouY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <img src="https://source.unsplash.com/featured/1920x1080/?snow" alt="UK Snow" class="img-fluid">
+                    <span class="badge">Weather/UK</span> <small>January 06, 2026</small>
+                    <h4>UK BRACES FOR HEAVY SNOW AS SCHOOLS SHUTTER</h4>
+                    <p>Snow warnings issued; over 500 schools closed due to weather.</p>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#news3">Read Full Story</button>
                 </div>
             </div>
         </div>
 
+        <h3 class="mt-5 mb-4 text-center">Top World News</h3>
         <div class="row mt-4">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://www.reuters.com/resizer/v2/R7NHBB2MANNRXKFOKZPDJMZLS4.jpg?auth=0163e00a0dd3c45d772c90f7ae7aad4fb26fb4711c0674778368f8e06f6f9e10&width=1920&quality=80" alt="Russia Venezuela" class="card-img-top">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?retail-store" alt="Retail Administration" class="card-img-top">
                     <div class="card-body">
-                        <span class="badge bg-danger">International</span> <small>January 05, 2026</small>
-                        <h5 class="card-title">Russia Loses Ally in Venezuela but Hopes to Gain from Trump's Realpolitik</h5>
-                        <p>Russia faces the loss of an ally in Venezuela following the U.S. capture of Maduro but anticipates potential gains from Trump's approach to international relations.</p>
+                        <span class="badge">Business</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">RETAIL GIANTS CLAIRE'S AND FACTORY SHOP CRUMBLE INTO ADMINISTRATION</h5>
+                        <p>Retail chains enter administration, risking 2,550 jobs.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news4">Read More</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1570549717489-6d3d1e1e5943?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Iran Protests" class="card-img-top">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?soccer" alt="Man United" class="card-img-top">
                     <div class="card-body">
-                        <span class="badge bg-info">Politics</span> <small>January 05, 2026</small>
-                        <h5 class="card-title">Iran's Leaders Struggle to End Protests, US Action in Venezuela Stokes Fears</h5>
-                        <p>Iran's leaders are facing challenges in quelling ongoing protests, while U.S. military action in Venezuela heightens regional anxieties.</p>
+                        <span class="badge">Sports</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">MAN U LEGEND BUTT THREATENS TO DITCH SEASON TICKETS OVER MANAGER SHAKEUP</h5>
+                        <p>Nicky Butt threatens to return season tickets over potential managerial change at Man United.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news5">Read More</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://www.reuters.com/resizer/v2/WNL3JRCUOFLXNN73LOHGD3OKZY.jpg?auth=25a56f1642e40ae446ab7f9d3c8c813f971c2981ca8f49c44be5bd85bd85ca1e75&width=1920&quality=80" alt="Denmark Trump" class="card-img-top">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?football-player" alt="Salah AFCON" class="card-img-top">
                     <div class="card-body">
-                        <span class="badge bg-primary">Politics</span> <small>January 05, 2026</small>
-                        <h5 class="card-title">Denmark Says Trump Must Be Taken Seriously About Wanting Greenland</h5>
-                        <p>Denmark's Prime Minister stated that President Trump is serious about seeking control of Greenland, with both Denmark and Greenland rejecting the idea.</p>
+                        <span class="badge">Sports</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">SALAH CONSOLS TEAMMATE AMID EGYPT'S DEVASTATING AFCON DOUBLE BLOW</h5>
+                        <p>Salah consoles teammate amid Egypt's AFCON setbacks.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news6">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?comedian" alt="Rosie Jones" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Entertainment</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">ROSIE JONES BLASTS GERVAIS AND CARR OVER CONTROVERSIAL TRANS JOKES</h5>
+                        <p>Rosie Jones criticizes comedians Gervais and Carr for trans jokes.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news7">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?electric-car" alt="Electric Cars" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Business</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">ELECTRIC CAR DISCOUNTS HIT UNSUSTAINABLE LEVELS, INDUSTRY WARNS</h5>
+                        <p>Industry warns electric car discounts are not sustainable.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news8">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?keyboard" alt="HP Keyboard PC" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Technology</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">HP UNVEILS REVOLUTIONARY PC-IN-A-KEYBOARD FOR HOT DESKS</h5>
+                        <p>HP introduces PC-in-a-keyboard for flexible workspaces.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news9">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?laptop" alt="Dell XPS" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Technology</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">DELL'S CES SHOCKER: XPS RETURNS LIGHTER, FASTER, AND THRILLING</h5>
+                        <p>Dell unveils new XPS at CES.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news10">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?lego" alt="LEGO Smart Brick" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Technology</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">LEGO LAUNCHES SMART BRICK UNLOCKING NEXT-GEN PLAY</h5>
+                        <p>LEGO introduces smart brick for interactive play.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news11">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?football-manager" alt="Chelsea Manager" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Sports</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">CHELSEA ON VERGE OF NEW MANAGER REVEAL, SAYS ROMANO</h5>
+                        <p>Updates on Chelsea's manager search.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news12">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?cricket" alt="Ashes Test" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Sports</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">ASHES DRAMA: AUSTRALIA VS ENGLAND DAY THREE THRILLER</h5>
+                        <p>Live updates from Ashes Test match.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news13">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?ski-resort" alt="Swiss Ski Bar" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Politics</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">SWISS BAN SPARKLERS AFTER DEADLY SKI BAR FIRE REVELATIONS</h5>
+                        <p>Swiss officials report on deadly fire and ban sparklers.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news14">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?politicians" alt="Starmer Trump" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Politics</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">STARMER DODGES TRUMP CRITICISM ON MADURO CAPTURE</h5>
+                        <p>UK Prime Minister Starmer avoids criticizing Trump on Maduro issue.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news15">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?driving" alt="Older Drivers" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Politics</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">OLDER DRIVERS FACE ROAD BAN OVER MANDATORY EYE TESTS</h5>
+                        <p>Older drivers at risk of ban for failing eye tests.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news16">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?family" alt="SMA Hope" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Entertainment</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">NEWRY MUM OFFERS HOPE TO JESY NELSON ON SMA STRUGGLES</h5>
+                        <p>Newry mum offers hope to Jesy Nelson regarding SMA.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news17">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?band" alt="Geese Band" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Entertainment</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">SOUND OF 2026: GEESE BAND SOARS FROM BROOKLYN BASEMENT</h5>
+                        <p>Feature on band Geese's rise in 2026.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news18">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?soap-opera" alt="Corriedale Crossover" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Entertainment</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">13 BURNING QUESTIONS FROM CORONATION STREET-EMMERDALE EXPLOSIVE CROSSOVER</h5>
+                        <p>Questions arise from soap opera crossover episode.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news19">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/1920x1080/?football-stadium" alt="Amorim Sacked" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge">Sports</span> <small>January 06, 2026</small>
+                        <h5 class="card-title">AMORIM AXED: MAN UNITED'S MONDAY NIGHT CLUB BREAKDOWN</h5>
+                        <p>Discussion on Amorim's sacking at Man United.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#news20">Read More</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="news1" tabindex="-1" aria-labelledby="news1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news1Label">MADURO DECLARES HIMSELF 'PRISONER OF WAR' IN DRAMATIC COURT APPEARANCE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Maduro's legal team includes an acclaimed lawyer who represented Julian Assange; he pleads not guilty to drug charges and claims he was 'kidnapped'. Opposition leader Machado says she hasn't spoken to Trump since October; US Republicans insist no 'endless war' looms in Venezuela.</p>
+                    <a href="https://www.youtube.com/results?search_query=Nicolas+Maduro+court+hearing" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news2" tabindex="-1" aria-labelledby="news2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news2Label">TRUMP'S GREENLAND PUSH SPARKS EUROPEAN CRISIS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Europe struggles to respond to Trump's assertions regarding Greenland, impacting international relations.</p>
+                    <a href="https://www.youtube.com/results?search_query=Trump+Greenland+claim" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news3" tabindex="-1" aria-labelledby="news3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news3Label">UK BRACES FOR HEAVY SNOW AS SCHOOLS SHUTTER</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Light snow moves across southern Scotland and northern England; moderate snow and ice warnings in place, with schools shutting down.</p>
+                    <a href="https://www.youtube.com/results?search_query=UK+snow+warnings+2026" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news4" tabindex="-1" aria-labelledby="news4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news4Label">RETAIL GIANTS CLAIRE'S AND FACTORY SHOP CRUMBLE INTO ADMINISTRATION</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Claire’s and The Original Factory Shop near collapse, putting jobs at risk amid financial difficulties.</p>
+                    <a href="https://www.youtube.com/results?search_query=Claire%27s+administration" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news5" tabindex="-1" aria-labelledby="news5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news5Label">MAN U LEGEND BUTT THREATENS TO DITCH SEASON TICKETS OVER MANAGER SHAKEUP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Reaction to Ruben Amorim's sacking; discussions on new manager searches.</p>
+                    <a href="https://www.youtube.com/results?search_query=Man+United+Amorim+sacked" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news6" tabindex="-1" aria-labelledby="news6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news6Label">SALAH CONSOLS TEAMMATE AMID EGYPT'S DEVASTATING AFCON DOUBLE BLOW</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Egypt faces double loss in AFCON; Salah's supportive actions highlighted.</p>
+                    <a href="https://www.youtube.com/results?search_query=Mohamed+Salah+AFCON" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news7" tabindex="-1" aria-labelledby="news7Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news7Label">ROSIE JONES BLASTS GERVAIS AND CARR OVER CONTROVERSIAL TRANS JOKES</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Discussion on comedy and transgender issues in entertainment.</p>
+                    <a href="https://www.youtube.com/results?search_query=Rosie+Jones+Gervais+Carr" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news8" tabindex="-1" aria-labelledby="news8Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news8Label">ELECTRIC CAR DISCOUNTS HIT UNSUSTAINABLE LEVELS, INDUSTRY WARNS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Discounts on electric vehicles deemed unsustainable by group.</p>
+                    <a href="https://www.youtube.com/results?search_query=electric+car+discounts" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news9" tabindex="-1" aria-labelledby="news9Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news9Label">HP UNVEILS REVOLUTIONARY PC-IN-A-KEYBOARD FOR HOT DESKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>New HP product for businesses with hot desking.</p>
+                    <a href="https://www.youtube.com/results?search_query=HP+PC+in+keyboard" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news10" tabindex="-1" aria-labelledby="news10Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news10Label">DELL'S CES SHOCKER: XPS RETURNS LIGHTER, FASTER, AND THRILLING</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Updated XPS model highlighted for performance and design.</p>
+                    <a href="https://www.youtube.com/results?search_query=Dell+XPS+CES" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news11" tabindex="-1" aria-labelledby="news11Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news11Label">LEGO LAUNCHES SMART BRICK UNLOCKING NEXT-GEN PLAY</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>New smart brick technology enhances LEGO play.</p>
+                    <a href="https://www.youtube.com/results?search_query=LEGO+smart+brick" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news12" tabindex="-1" aria-labelledby="news12Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news12Label">CHELSEA ON VERGE OF NEW MANAGER REVEAL, SAYS ROMANO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Romano provides insights on potential new Chelsea boss.</p>
+                    <a href="https://www.youtube.com/results?search_query=Chelsea+manager+search" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news13" tabindex="-1" aria-labelledby="news13Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news13Label">ASHES DRAMA: AUSTRALIA VS ENGLAND DAY THREE THRILLER</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Day three reactions from the cricket match.</p>
+                    <a href="https://www.youtube.com/results?search_query=Ashes+Test+2026" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news14" tabindex="-1" aria-labelledby="news14Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news14Label">SWISS BAN SPARKLERS AFTER DEADLY SKI BAR FIRE REVELATIONS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bar unchecked for five years prior to fire; sparklers prohibited.</p>
+                    <a href="https://www.youtube.com/results?search_query=Swiss+ski+bar+fire" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news15" tabindex="-1" aria-labelledby="news15Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news15Label">STARMER DODGES TRUMP CRITICISM ON MADURO CAPTURE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Strategic approach in international politics.</p>
+                    <a href="https://www.youtube.com/results?search_query=Starmer+Trump+Maduro" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news16" tabindex="-1" aria-labelledby="news16Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news16Label">OLDER DRIVERS FACE ROAD BAN OVER MANDATORY EYE TESTS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Older drivers at risk of ban for failing eye tests.</p>
+                    <a href="https://www.youtube.com/results?search_query=eye+tests+for+drivers" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news17" tabindex="-1" aria-labelledby="news17Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news17Label">NEWRY MUM OFFERS HOPE TO JESY NELSON ON SMA STRUGGLES</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Newry mum offers hope to Jesy Nelson regarding SMA.</p>
+                    <a href="https://www.youtube.com/results?search_query=Jesy+Nelson+SMA" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news18" tabindex="-1" aria-labelledby="news18Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news18Label">SOUND OF 2026: GEESE BAND SOARS FROM BROOKLYN BASEMENT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Feature on band Geese's rise in 2026.</p>
+                    <a href="https://www.youtube.com/results?search_query=Geese+band+2026" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news19" tabindex="-1" aria-labelledby="news19Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news19Label">13 BURNING QUESTIONS FROM CORONATION STREET-EMMERDALE EXPLOSIVE CROSSOVER</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Questions arise from soap opera crossover episode.</p>
+                    <a href="https://www.youtube.com/results?search_query=Coronation+Street+Emmerdale+crossover" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="news20" tabindex="-1" aria-labelledby="news20Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="news20Label">AMORIM AXED: MAN UNITED'S MONDAY NIGHT CLUB BREAKDOWN</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Discussion on Amorim's sacking at Man United.</p>
+                    <a href="https://www.youtube.com/results?search_query=Amorim+sacked+Manchester+United" target="_blank">Watch Video on YouTube</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
